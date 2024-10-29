@@ -120,7 +120,7 @@ const Login = ({ isOpen, onClose }) => {
               </Typography>
             </Box>
           </Box>
-          <Link href="/dashboard">
+          <Link href="/builder">
           <Button
             fullWidth
             className="gradientBg"

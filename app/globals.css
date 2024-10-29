@@ -26,6 +26,9 @@ img {
 }
 /* sidebar */
 .sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 7rem;
   height: 100vh;
   background-color: #f6f6f6;
@@ -71,8 +74,9 @@ img {
   margin-left: 0.5rem;
 }
 
-.sidebar_bottom{
-  /* display: flex;
-  justify-content: space-between; */
 
+
+.css-1akz4tj{
+  height: auto !important;
+  padding: 0 !important;
 }

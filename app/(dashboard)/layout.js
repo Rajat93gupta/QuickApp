@@ -3,7 +3,7 @@ import SidebarApp from '../sidebarComponent/sidebar'
 
 const Layout = ({children}) => {
   return (
-    <div style={{display:"flex",gap:"10px"}}>
+    <div style={{display:"flex"}}>
         <SidebarApp/>
         <div>
 

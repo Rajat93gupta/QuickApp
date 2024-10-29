@@ -13,37 +13,8 @@ const PreviewApp = () => {
           alignItems="center"
           gap={4}
         >
-             {/* Right Section: Text */}
-          <Box flex={1} p={2} >
-            <Typography
-              variant="h4"
-              component="h1"
-              fontWeight="bold"
-              sx={{
-                fontFamily: "Montserrat",
-                fontSize: { xs: "1.875rem", md: "2.25rem", lg: "3rem" },
-                textAlign: { xs: "center", md: "left" }, // Center text on small screens
-              }}
-            >
-               Preview Your App
-
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                fontFamily: "Montserrat",
-                mt: 2,
-                fontSize: { xs: "1rem", md: "1.125rem" },
-                textAlign: { xs: "center", md: "left" }, // Center text on small screens
-              }}
-            >
-              Preview your apps layout and design. See how your branding choices
-              come together on different screens, and experience the user flow
-              before moving forward with development.
-
-            </Typography>
-          </Box>
-          {/* Left Section: Image */}
+          
+          {/* Right Section: Image */}
           <Box
             flex={1}
             sx={{
@@ -63,6 +34,34 @@ const PreviewApp = () => {
               sizes="(max-width: 768px) 100vw, 500px" // Adjust sizes for responsiveness
               priority // Load the image with high priority
             />
+          </Box>
+             {/* Left Section: Text */}
+             <Box flex={1} p={2} >
+            <Typography
+              variant="h1"
+              component="h1"
+              fontWeight="bold"
+              sx={{
+                fontSize: { xs: "1.875rem", md: "2.25rem", lg: "3rem" },
+                textAlign: { xs: "center", md: "left" }, // Center text on small screens
+              }}
+            >
+               Preview Your App
+
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                mt: 2,
+                fontSize: { xs: "1rem", md: "1.125rem" },
+                textAlign: { xs: "center", md: "left" }, // Center text on small screens
+              }}
+            >
+              Preview your apps layout and design. See how your branding choices
+              come together on different screens, and experience the user flow
+              before moving forward with development.
+
+            </Typography>
           </Box>
 
          

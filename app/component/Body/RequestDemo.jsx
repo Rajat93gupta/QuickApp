@@ -7,19 +7,18 @@ const RequestDemo = () => {
       <Container>
         <Box display="flex" flexDirection="column" alignItems="center" textAlign="center">
           <Typography
-            variant="h4"
+            variant="h1"
             component="h1"
-            sx={{ py: 4, fontFamily: "Roboto", fontWeight: "bold", fontSize: { xs: "2.25rem", md: "3rem" } }}
+            sx={{ py: {xs:2, md:4}, fontWeight: "bold", fontSize: { xs: "2.25rem", md: "3rem" } }}
           >
             Transform Your Unique App Idea into a Reality
           </Typography>
           <Typography
             variant="body1"
             sx={{
-              fontFamily: "Roboto",
               fontWeight: "300",
               fontSize: { xs: "1rem", md: "1.5rem" },
-              mt: 4,
+              mt: {xs:2 ,md:4}
             }}
           >
             Unlock the potential of your concept with our intuitive app builder.

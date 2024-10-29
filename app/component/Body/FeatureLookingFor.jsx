@@ -7,14 +7,22 @@ const FeatureLookingFor = () => {
   return (
     <Box sx={{ backgroundColor: "#fbfbfe", paddingBottom:"50px" }}>
       <Typography
-        variant="h4"
+        variant="h1"
         component="h1"
+        fontWeight="bold"
         align="center"
-        sx={{ py:4, fontFamily: "Roboto", fontWeight: "bold" }}
+        sx={{
+          fontFamily: "Roboto",
+          fontWeight:"800",
+          fontSize: { xs: "1.875rem", md: "2.25rem", lg: "3.5rem" },
+          textAlign: { xs: "center" },
+          py: 4,
+          lineHeight: {xs:"33px",md:"61px"},
+        }}
       >
         The features you were looking for
       </Typography>
-      <Divider style={{marginBottom:"30px", marginTop:"50px"}}  />
+      <Divider style={{marginBottom:"30px", }}  />
       <Container>
         <Box
           display="flex"
@@ -28,20 +36,19 @@ const FeatureLookingFor = () => {
             <Box
               key={feature.id}
               sx={{
-                flex: "1 0 45%", // Flex-grow and basis for responsiveness
-                maxWidth: "265px", // Optional: limit max width
+                flex: "1 0 45%", 
+                maxWidth: "265px", 
               
                 margin: "10px",
               }}
             >
               <Card
                 sx={{
-                   
-                    height:"300px",
+                  height: "270px",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                //   backgroundColor: "#e0e0e0",
+
                   p: 3,
                 }}
               >
@@ -56,12 +63,14 @@ const FeatureLookingFor = () => {
                   <Typography
                     variant="h6"
                     component="h2"
-                    sx={{ fontFamily: "Roboto", fontWeight: "bold" }}
+                    align="center"
+                    sx={{ fontFamily: "Roboto", fontWeight: "bold",lineHeight:"26px", fontSize:"1.3rem" }}
                   >
                     {feature.title}
                   </Typography>
                   <Typography
                     variant="body2"
+                     align="center"
                     sx={{ fontFamily: "Roboto", marginTop: 2 }}
                   >
                     {feature.description}

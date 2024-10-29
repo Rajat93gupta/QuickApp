@@ -1,5 +1,5 @@
 import { Icone1, Icone2, Icone3, Icone4 } from "@/public";
-
+import { Lightbulb, Whatshot, PlayCircle, Flag, EmojiEvents } from "@mui/icons-material";
 
 export const features = [
     {
@@ -62,4 +62,78 @@ export const questions = [
     },
   ];
 
+  
+
+  export const CardData = [
+    {
+      "title": "Virtual Stay",
+      "status": "Draft",
+      "createdOn": "August 14, 2024",
+      "milestones": [
+        { "name": "Idea", "icon": <Lightbulb/>, "status": "completed" },
+        { "name": "Research", "icon": <Whatshot/>, "status": "completed" },
+        { "name": "Development", "icon": <PlayCircle/>, "status": "in-progress" },
+        { "name": "Testing", "icon": <Flag/>, "status": "pending" },
+        { "name": "Launch", "icon": <EmojiEvents/>, "status": "pending" }
+      ],
+      "timeSpent": "20 minutes",
+      "duration": "3 Months"
+    },
+    {
+      "title": "Health Tracker ",
+      "status": "In Progress",
+      "createdOn": "July 10, 2024",
+      "milestones": [
+        { "name": "Idea", "icon": <Lightbulb/>, "status": "completed" },
+        { "name": "Research", "icon": <Whatshot/>, "status": "completed" },
+        { "name": "Development", "icon": <PlayCircle/>, "status": "in-progress" },
+        { "name": "Testing", "icon": <Flag/>, "status": "pending" },
+        { "name": "Launch", "icon": <EmojiEvents/>, "status": "pending" }
+      ],
+      "timeSpent": "15 hours",
+      "duration": "6 Months"
+    },
+    {
+      "title": "E-commerce ",
+      "status": "Completed",
+      "createdOn": "March 3, 2024",
+      "milestones": [
+        { "name": "Idea", "icon": <Lightbulb/>, "status": "completed" },
+        { "name": "Research", "icon": <Whatshot/>, "status": "completed" },
+        { "name": "Development", "icon": <PlayCircle/>, "status": "in-progress" },
+        { "name": "Testing", "icon": <Flag/>, "status": "pending" },
+        { "name": "Launch", "icon": <EmojiEvents/>, "status": "pending" }
+      ],
+      "timeSpent": "100 hours",
+      "duration": "8 Months"
+    },
+    {
+      "title": "Education Portal",
+      "status": "In Progress",
+      "createdOn": "September 25, 2024",
+      "milestones": [
+        { "name": "Idea", "icon": <Lightbulb/>, "status": "completed" },
+        { "name": "Research", "icon": <Whatshot/>, "status": "completed" },
+        { "name": "Development", "icon": <PlayCircle/>, "status": "in-progress" },
+        { "name": "Testing", "icon": <Flag/>, "status": "pending" },
+        { "name": "Launch", "icon": <EmojiEvents/>, "status": "pending" }
+      ],
+      "timeSpent": "5 hours",
+      "duration": "4 Months"
+    },
+    {
+      "title": "Fitness Coach",
+      "status": "Draft",
+      "createdOn": "October 5, 2024",
+      "milestones": [
+        { "name": "Idea", "icon": <Lightbulb/>, "status": "completed" },
+        { "name": "Research", "icon": <Whatshot/>, "status": "completed" },
+        { "name": "Development", "icon": <PlayCircle/>, "status": "in-progress" },
+        { "name": "Testing", "icon": <Flag/>, "status": "pending" },
+        { "name": "Launch", "icon": <EmojiEvents/>, "status": "pending" }
+      ],
+      "timeSpent": "2 hours",
+      "duration": "2 Months"
+    }
+  ]
   

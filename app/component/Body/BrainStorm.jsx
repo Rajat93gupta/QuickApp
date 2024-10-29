@@ -6,13 +6,13 @@ const Brainstorm = () => {
   return (
     <Box sx={{ backgroundColor: '#6B0EAD', py: { xs: 4, md: 12 }, position: 'relative' }}>
       <Container maxWidth="lg" sx={{ textAlign: 'center', position: 'relative' }}>
-        <Typography variant="h6" sx={{ fontFamily: 'Roboto', fontWeight: 'bold', color: 'white' }}>
+        <Typography variant="h6" sx={{  fontWeight: 'bold', color: 'white' }}>
           Start building ideas
         </Typography>
-        <Typography variant="h3" sx={{ fontFamily: 'Roboto', fontWeight: 'bold', color: 'white', mt: 2 }}>
+        <Typography variant="h3" sx={{  fontWeight: 'bold', color: 'white', mt: 2 }}>
           Brainstorm now!
         </Typography>
-        <Typography variant="h5" sx={{ fontFamily: 'Roboto', color: 'white', mt: 2 }}>
+        <Typography variant="h5" sx={{  color: 'white', mt: 2 }}>
           Let’s transform your vision into reality with our easy-to-use
           <br /> app building platform!
         </Typography>

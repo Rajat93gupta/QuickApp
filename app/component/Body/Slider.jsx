@@ -1,7 +1,7 @@
 "use client"; // necessary for Next.js app directory
 
 import { useState } from "react";
-import { Box, Typography, IconButton, Stack } from "@mui/material";
+import { Box, Typography, IconButton } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
@@ -11,14 +11,14 @@ const testimonials = [
     text: "Building my app was easier and faster than I ever imagined. The AI suggestions were spot on!",
     name: "Marie Poirot",
     company: "Bigapp",
-    imgSrc: "/frame.png",
+    imgSrc: "/slide.png",
   },
   {
     id: 2,
     text: "This service has transformed our workflow, making us more efficient and productive.",
     name: "John Doe",
     company: "Tech Solutions",
-    imgSrc: "/right.png",
+    imgSrc: "/slide.png",
   },
   // Add more testimonials as needed
 ];
@@ -39,19 +39,21 @@ export default function TestimonialSlider() {
       sx={{
         width: "100%",
         mx: "auto",
-        py: 5,
+        pt: 5,
         px: { xs: 2, md: 12 }, // Responsive padding
-        backgroundColor: "#E0F7FA",
+        backgroundColor: "#AAEAD0",
         borderRadius: "8px",
         position: "relative",
         boxShadow: 3,
+        pb:"5rem"
       }}
     >
       <Typography
-        variant="h5"
-        sx={{ fontWeight: "800", fontSize: { xs: "24px", md: "56px" }, lineHeight: { xs: "32px", md: "61px" } }}
+        variant="h1"
+         component="h1"
+        sx={{ fontWeight: "800", fontSize: { xs: "2.25rem", md: "3rem" }, lineHeight: { xs: "32px", md: "61px" } }}
         textAlign="center"
-        gutterBottom
+        paddingBottom="3rem"
       >
         What customers say about us
       </Typography>
@@ -59,16 +61,20 @@ export default function TestimonialSlider() {
       {/* Testimonial Content */}
       <Box
         sx={{
-          display: { xs: "block", md: "flex" }, // Stack on small screens
+          display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
           alignItems: "center",
           justifyContent: "space-between",
-          px: { xs: 2, md: 9 },
+          px: { xs: 7, md: 9 },
           py: 4,
           backgroundColor: "#FFFFFF",
           borderRadius: "12px",
           boxShadow: 3,
           gap: 3,
           position: "relative",
+          width: { xs: "100%", sm: "100%", md: "100%" }, 
+           
+          height: { xs: "auto", sm: "300px" }, 
         }}
       >
         {/* Left Arrow */}
@@ -99,21 +105,12 @@ export default function TestimonialSlider() {
         </Box>
 
         {/* Custom Avatar on Right with Background Box */}
-        <Box sx={{ position: "relative", width: { xs: "100%", md: "400px" }, height: { xs: "300px", md: "400px" } }}>
-          {/* Background rotated box */}
-          <Box
-            sx={{
-              position: "absolute",
-              width: { xs: "80%", md: "349px" },
-              height: { xs: "95%", md: "396px" },
-              backgroundColor: "#e74c3c",
-              transform: "rotate(-28deg)",
-              top: "10px",
-              left: { xs: "10%", md: "7px" },
-              borderRadius: "8px",
-              zIndex: 1,
-            }}
-          />
+        <Box sx={{ 
+           position: "relative",
+           width: { xs: "100%", sm: "300px", md: "400px" },
+           height: { xs: "300px", sm: "350px", md: "400px" },
+        }}>
+          
           {/* Foreground Avatar */}
           <Box
             component="img"
@@ -121,11 +118,10 @@ export default function TestimonialSlider() {
             alt={testimonials[currentSlide].name}
             sx={{
               position: "relative",
-              width: "100%", // Responsive width
-              height: "100%", // Responsive height
+              width: "100%", 
+              height: "100%", 
               borderRadius: "8px",
-              boxShadow: 3,
-              border: "4px solid white",
+             
               zIndex: 2,
             }}
           />
@@ -146,23 +142,7 @@ export default function TestimonialSlider() {
         </IconButton>
       </Box>
 
-      {/* Indicator Dots */}
-      <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
-        {testimonials.map((_, index) => (
-          <Box
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            sx={{
-              height: 10,
-              width: 10,
-              borderRadius: "50%",
-              backgroundColor: currentSlide === index ? "primary.main" : "grey.400",
-              mx: 0.5,
-              cursor: "pointer",
-            }}
-          />
-        ))}
-      </Box>
+    
     </Box>
   );
 }

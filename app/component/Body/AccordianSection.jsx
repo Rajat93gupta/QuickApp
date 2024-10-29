@@ -13,7 +13,7 @@ import { questions } from "./Helper";
 
 const AccordianSection = () => {
   return (
-    <Container sx={{ py: 4, px: 4 }}>
+    <Container  sx={{ py: 4, px: 4 }}>
       <Typography
         variant="h4"
         component="h1"
@@ -29,7 +29,7 @@ const AccordianSection = () => {
       </Typography>
       <Box>
         {questions.map((question) => (
-          <Accordion key={question.id} sx={{ mb: 2 }}>
+          <Accordion elevation={0} key={question.id} sx={{ mb: 2 }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`panel${question.id}-content`}
