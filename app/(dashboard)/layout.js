@@ -1,16 +1,17 @@
 import React from 'react'
-import SidebarApp from '../sidebarComponent/sidebar'
+import { Box } from '@mui/material'
+import SidebarApp from '../sidebarComponent/SideBar/sidebar'
 
 const Layout = ({children}) => {
   return (
-    <div style={{display:"flex"}}>
+    <Box sx={{ display: 'flex', position:'relative' }}>
         <SidebarApp/>
-        <div>
+        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
 
         {children}
-        </div>
+        </Box>
       
-    </div>
+    </Box>
   )
 }
 

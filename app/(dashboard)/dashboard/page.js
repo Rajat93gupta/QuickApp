@@ -1,5 +1,5 @@
 
-import SidebarApp from '@/app/sidebarComponent/sidebar'
+import SidebarApp from '@/app/sidebarComponent/SideBar/sidebar'
 import React from 'react'
 
 

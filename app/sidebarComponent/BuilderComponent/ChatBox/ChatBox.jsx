@@ -14,7 +14,7 @@ const ChatBox = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        height: '100vh',
+        // height: '100vh',
         backgroundColor: '#f5f5f5',
         borderRadius: 2,
         overflow: 'hidden',
